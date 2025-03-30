@@ -76,7 +76,10 @@ class _Screen1State extends State<Screen1> {
                 if (isValid) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Screen2()),
+                    MaterialPageRoute(
+                      builder:
+                          (context) => Screen2(email: _emailController.text),
+                    ),
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(

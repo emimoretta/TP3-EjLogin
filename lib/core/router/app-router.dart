@@ -6,6 +6,6 @@ final appRouter = GoRouter(
   initialLocation: '/screen1',
   routes: [
     GoRoute(path: '/screen1', builder: (context, state) => Screen1()),
-    GoRoute(path: '/screen2', builder: (context, state) => Screen2()),
+    GoRoute(path: '/screen2', builder: (context, state) => Screen2(email: '')),
   ],
 );
